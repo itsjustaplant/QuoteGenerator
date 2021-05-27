@@ -1,0 +1,5 @@
+.quote {
+    width: clamp(300px, 66%, 720px);
+    border-left: 8px solid #F7DF94;
+    padding: 0 1rem;
+}

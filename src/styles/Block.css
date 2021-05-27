@@ -1,0 +1,41 @@
+.block {
+    width: clamp(300px, 66%, 720px);
+    margin-top: 1rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-areas: "author button"
+                         "genre button";
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 30px 30px;
+    transition: 0.4s ease-in-out;
+}
+
+.block__author {
+    font-size: 0.8rem;
+    color: var(--text-secondary-light);
+    grid-area: author;
+    vertical-align: middle;
+    transition: 0.4s ease-in-out;
+}
+
+.block__genre {
+    font-size: 0.5rem;
+    color: var(--text-light);
+    grid-area: genre;
+    vertical-align: middle;
+}
+
+.block__button {
+    grid-area: button;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+.block:hover {
+    background-color: var(--background-dark);
+}
+
+.block:hover > .block__author {
+    color: var(--text-secondary-dark);
+}
