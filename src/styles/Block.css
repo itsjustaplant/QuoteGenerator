@@ -1,18 +1,21 @@
-.block {
+.block-link{
     width: clamp(300px, 66%, 720px);
     margin-top: 1rem;
-    padding: 1rem;
+    padding: 0 1rem;
+    transform: translateX(-1rem);
+}
+
+.block {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
     display: grid;
     grid-template-areas: "author button"
                          "genre button";
     grid-template-columns: 80% 20%;
-    grid-template-rows: 30px 30px;
+    grid-template-rows: 1.2rem 1.2rem;
     transition: 0.4s ease-in-out;
-}
-
-.block-link{
-    width: clamp(300px, 66%, 720px);
-    justify-content: center;
+    text-align: left;
 }
 
 .block__author {
@@ -20,6 +23,8 @@
     color: var(--text-secondary-light);
     grid-area: author;
     transition: 0.4s ease-in-out;
+    display: flex;
+    align-items: center;
 }
 
 .block__genre {
@@ -27,6 +32,8 @@
     color: var(--text-light);
     grid-area: genre;
     vertical-align: middle;
+    display: flex;
+    align-items: center;
 }
 
 .block__button {
