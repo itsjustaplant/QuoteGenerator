@@ -1,0 +1,13 @@
+.footer {
+    position: fixed;
+    bottom: 0.2rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.5rem;
+    color: var(--text-light);
+}
+
+a {
+    color: var(--text-light);
+    text-decoration: underline;
+}
