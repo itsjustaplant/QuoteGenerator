@@ -10,19 +10,23 @@ import "../../styles/Block.css"
 export default class Block extends React.Component {
     render() {
         return (
-            <div className="block">
-                <span className={"block__author"}>{this.props.author}</span>
-                <span className={"block__genre"}>{this.props.genre}</span>
                 <Route>
-                    <Link className={"block__button"}
+                    <Link
+                          className={"block-link"}
                           to={"/" + this.props.author}
                           style={{
                               textDecoration: "none"
-                          }}>
-                        <img src={"outline_arrow_right_alt_white_24dp.png"}/>
+                          }}
+                    >
+                        <div className={"block"}>
+                            <span className={"block__author"}>{this.props.author}</span>
+                            <span className={"block__genre"}>{this.props.genre}</span>
+                            <div className={"block__button"}>
+                                <img src={"./outline_arrow_right_alt_white_24dp.png"}/>
+                            </div>
+                        </div>
                     </Link>
                 </Route>
-            </div>
         )
     }
 }

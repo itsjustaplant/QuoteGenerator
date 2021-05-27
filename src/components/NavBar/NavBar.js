@@ -14,11 +14,12 @@ export default function NavBar() {
                 <Link to="/reload" style={
                     {
                         textDecoration: "none",
-                        color: "var(--text-secondary-light)"
+                        color: "var(--text-secondary-light)",
                     }}
                 >
                     random
                 </Link>
+                <img className={"refresh-img"} src={"./autorenew_black_24dp.svg"}/>
             </Route>
         </div>
     )

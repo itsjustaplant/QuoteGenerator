@@ -18,7 +18,8 @@
     margin-top: 1rem;
     padding: 0 1rem;
 }
-span{
+
+span {
     width: clamp(300px, 66%, 720px);
     text-align: left;
     transform: translateX(1rem);

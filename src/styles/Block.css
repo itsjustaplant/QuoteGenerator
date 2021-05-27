@@ -10,11 +10,15 @@
     transition: 0.4s ease-in-out;
 }
 
+.block-link{
+    width: clamp(300px, 66%, 720px);
+    justify-content: center;
+}
+
 .block__author {
     font-size: 0.8rem;
     color: var(--text-secondary-light);
     grid-area: author;
-    vertical-align: middle;
     transition: 0.4s ease-in-out;
 }
 
