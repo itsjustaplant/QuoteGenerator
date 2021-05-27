@@ -9,15 +9,13 @@ export default function Author() {
     const authorName = path.name
     const API_URL = `http://api.quotable.io/quotes?author=${authorName}&limit=3`
 
-    const [count, setCount] = useState(0)
     const [quotes, setQuotes] = useState([])
 
     useEffect(() => {
         fetch(API_URL)
             .then(response => response.json())
             .then(data => {
-                let {count, results, ...rest} = data
-                setCount(count)
+                let {results, ...rest} = data
                 setQuotes(results)
             })
     }, [])
