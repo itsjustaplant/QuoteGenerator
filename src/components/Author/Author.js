@@ -7,7 +7,7 @@ import "../../styles/Author.css"
 export default function Author() {
     const path = useParams()
     const authorName = path.name
-    const API_URL = `http://api.quotable.io/quotes?author=${authorName}&limit=3`
+    const API_URL = `https://api.quotable.io/quotes?author=${authorName}&limit=3`
 
     const [quotes, setQuotes] = useState([])
 

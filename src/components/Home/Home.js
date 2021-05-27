@@ -5,7 +5,7 @@ import Block from "./Block";
 
 import "../../styles/Home.css"
 
-const API_URL = "http://api.quotable.io/random"
+const API_URL = "https://api.quotable.io/random"
 
 export default class Home extends React.Component {
     constructor(props) {
