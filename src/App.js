@@ -8,12 +8,14 @@ import {
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./components/Home/Home";
 import Author from "./components/Author/Author";
+import Footer from "./components/Footer/Footer";
 
 import './App.css';
 
+
 function App() {
     return (
-        <div className="App--light">
+        <div className="App">
             <Router>
                 <NavBar/>
                 <Switch>
@@ -29,6 +31,7 @@ function App() {
                         <Home/>
                     </Route>
                 </Switch>
+                <Footer/>
             </Router>
         </div>
     );
